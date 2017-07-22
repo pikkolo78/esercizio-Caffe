@@ -3,9 +3,9 @@ public class Main
 
 	public static void main(String[] args) 
 	{
-		Ordine.stampaOrdine(43000);
-		Ordine.stampaOrdine(18000);
-		Ordine.stampaOrdine(33000);
+		Ordine.stampaOrdine(45000);
+		Ordine.stampaOrdine(77000);
+		Ordine.stampaOrdine(92000);
 		
 	}
 }	
