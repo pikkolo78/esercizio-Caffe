@@ -35,17 +35,50 @@ public class Ordine
     
     
 
-    double costoImaballaggio=costoSacchi + (scatolaGrande*2)+(scatolaMedia*1)+(scatolaPiccola*0.5);creiamo variabile per saper il costo di tutte le spese e stampiamo
+    double costoImaballaggio=costoSacchi + (scatolaGrande*2)+(scatolaMedia*1)+(scatolaPiccola*0.5);//creiamo variabile per saper il costo di tutte le spese e stampiamo
     System.out.println(scatolaGrande + " Scatole grandi");
     System.out.println(scatolaMedia+ " Scatole medie");
     System.out.println(scatolaPiccola+ " scatole piccole");
     System.out.println("Costo totale imballaggio: "+ costoImaballaggio);
     System.out.println();
+   }
+   public static void stampaOrdine2(int grammi)
+   {
+      int sacchi=0;
+      while(grammi  > 0)
+      {
+      	sacchi++;
+      	grammi=grammi-1000;
+      }
+      int scatolaGrande=0;
+      while(sacchi>=20)
+      {
+      	scatolaGrande++;
+      	sacchi=sacchi-20;
+      }
+      int scatolaMedia=0;
+      while(sacchi>=10)
+      {
+      	scatolaMedia++;
+      	sacchi=sacchi-10;
+      }
+      int scatolaPiccola=0;
+      while(sacchi>0)
+      {
+      	scatolaPiccola++;
+      	sacchi=sacchi-5;
+      }
+      System.out.println(scatolaGrande + " Scatole grandi");
+    System.out.println(scatolaMedia+ " Scatole medie");
+    System.out.println(scatolaPiccola+ " scatole piccole");
+    
+    System.out.println();
 
 
+      
 
 
+   }
 
-  }
 
 }
